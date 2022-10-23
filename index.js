@@ -7,7 +7,6 @@ console.log("___________________________________________________________________
 let userInput;
 let NoOfChances=0;
 let chances; // chances 
-// let userInput = Number.parseInt(prompt("Enter a Number to Guess:"))
 
 do {
     userInput = Number.parseInt(prompt("Enter a Number to Guess:"))
