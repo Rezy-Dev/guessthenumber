@@ -6,7 +6,7 @@ console.log("Computer Guessed:", randomNumber, "SUSHHHHHHHHHHHHH!!!")
 console.log("___________________________________________________________________________________")
 let userInput;
 let NoOfChances=0;
-let chances; // chances 
+let chances;
 
 do {
     userInput = Number.parseInt(prompt("Enter a Number to Guess:"))
@@ -20,7 +20,7 @@ do {
     else if(userInput < randomNumber){
         console.log(`${userInput} is smaller than random number.`)
     }
-            else if(userInput > randomNumber){
+    else if(userInput > randomNumber){
         console.log(`${userInput} is greater than random number.`)
     }
     else if (userInput == randomNumber) {
