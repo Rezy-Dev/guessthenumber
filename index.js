@@ -18,9 +18,15 @@ do {
     else if (userInput < 1) {
         console.log("Enter Value from 1-100 ONLY")
     }
+    else if(userInput < randomNumber){
+        console.log(`${userInput} is smaller than random number.`)
+    }
+            else if(userInput > randomNumber){
+        console.log(`${userInput} is greater than random number.`)
+    }
     else if (userInput == randomNumber) {
         console.log(`You guessed ${userInput} which was CORRECT!!`)
         let toPrintChance = 100 - chances
-        console.log(`------------SCORE: ${toPrintChance}------------`)
+        console.log(`------------YOUR SCORE: ${toPrintChance}------------`)
     }
 } while (userInput != randomNumber)
